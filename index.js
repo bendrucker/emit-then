@@ -8,7 +8,7 @@ var emitThen = function (event) {
   return Promise
     .bind(this)
     .return(this)
-    .call('listeners', 'event')
+    .call('listeners', event)
     .map(function (listener) {
       var a1 = args[0], a2 = args[1];
       switch (args.length) {
