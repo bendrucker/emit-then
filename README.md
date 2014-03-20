@@ -1,4 +1,4 @@
-emitThen
+emitThen [![Build Status](https://travis-ci.org/valet-io/emitThen.svg)](https://travis-ci.org/valet-io/emitThen)
 ========
 
 EventEmitter.emit that wraps event calls in a promise.
