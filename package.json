@@ -20,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/valet-io/emitThen/issues"
   },
-  "homepage": "https://github.com/valet-io/emitThen"
+  "homepage": "https://github.com/valet-io/emitThen",
+  "dependencies": {
+    "bluebird": "~1.1.1"
+  },
+  "devDependencies": {
+    "test-setup": "git://github.com/valet-io/test-setup.git"
+  }
 }
