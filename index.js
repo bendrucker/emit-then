@@ -17,7 +17,8 @@ var emitThen = function (event) {
         case 2: return listener.call(this, a1, a2);
         default: return listener.apply(this, args);
       }
-    });
+    })
+    .return(null);
 };
 
 emitThen.register = function () {

@@ -1,6 +1,7 @@
 'use strict';
 
 /* globals describe:false, beforeEach:false, it:false, expect:false, sinon:false */
+/* jshint expr:true */
 
 require('test-setup');
 
@@ -35,8 +36,10 @@ describe('emitThen', function () {
   });
 
   it('resolves when the handlers resolve', function () {
-    process.nextTick(deferred.resolve.bind(deferred));
-    return emitter.emitThen('event');
+    process.nextTick(deferred.resolve.bind(deferred, 'foo'));
+    return emitter.emitThen('event').then(function (value) {
+      expect(value).to.be.null;
+    });
   });
 
   it('rejects when a handler rejects', function () {
