@@ -1,0 +1,24 @@
+{
+  "name": "emitThen",
+  "version": "0.0.0",
+  "description": "EventEmitter.emit that wraps event calls in a promise",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/valet-io/emitThen.git"
+  },
+  "keywords": [
+    "events",
+    "EventEmitter",
+    "promise"
+  ],
+  "author": "Ben Drucker <bvdrucker@gmail.com> (http://www.bendrucker.me/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/valet-io/emitThen/issues"
+  },
+  "homepage": "https://github.com/valet-io/emitThen"
+}
