@@ -5,7 +5,7 @@ EventEmitter.emit that wraps event calls in a promise.
 
 ## Installation
 ```bash
-npm install emitThen
+$ npm install emitThen
 ```
 
 ## Setup
@@ -16,7 +16,7 @@ Add `emitThen` to your emitter prototype(s):
 http.server.emitThen = require('emitThen');
 ```
 
-Or register `emitThen on `EventEmitter.prototype` to make it available on all emitters:
+Or register `emitThen` on `EventEmitter.prototype` to make it available on all emitters:
 
 ```js
 require('emitThen').register();
