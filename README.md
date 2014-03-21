@@ -5,7 +5,7 @@ EventEmitter.emit that wraps event calls in a promise.
 
 ## Installation
 ```bash
-$ npm install emitThen
+$ npm install emit-then
 ```
 
 ## Setup

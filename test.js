@@ -9,7 +9,7 @@ var EventEmitter = require('events').EventEmitter;
 var Promise      = require('bluebird');
 var emitThen     = require('./');
 
-describe('emitThen', function () {
+describe('emit-then', function () {
 
   var emitter;
   beforeEach(function () {
