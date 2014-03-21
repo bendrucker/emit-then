@@ -1,6 +1,6 @@
 {
   "name": "emit-then",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "EventEmitter.emit that wraps event calls in a promise",
   "main": "index.js",
   "scripts": {
