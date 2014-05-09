@@ -1,6 +1,6 @@
 {
   "name": "emit-then",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "EventEmitter.emit that wraps event calls in a promise",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/valet-io/emit-then.git"
+    "url": "git://github.com/bendrucker/emit-then.git"
   },
   "keywords": [
     "events",
@@ -18,13 +18,13 @@
   "author": "Ben Drucker <bvdrucker@gmail.com> (http://www.bendrucker.me/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/valet-io/emit-then/issues"
+    "url": "https://github.com/bendrucker/emit-then/issues"
   },
-  "homepage": "https://github.com/valet-io/emit-then",
+  "homepage": "https://github.com/bendrucker/emit-then",
   "dependencies": {
     "bluebird": "1.x"
   },
   "devDependencies": {
-    "test-setup": "git://github.com/valet-io/test-setup.git"
+    "test-setup": "valet-io/test-setup"
   }
 }
