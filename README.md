@@ -1,7 +1,7 @@
 emit-then [![Build Status](https://travis-ci.org/bendrucker/emit-then.svg)](https://travis-ci.org/bendrucker/emit-then) [![NPM version](https://badge.fury.io/js/emit-then.svg)](http://badge.fury.io/js/emit-then)
 ========
 
-EventEmitter.emit that wraps event calls in a promise.
+`EventEmitter.prototype.emit` that wraps event calls in a promise.
 
 ## Installation
 ```bash
