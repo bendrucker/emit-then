@@ -3,8 +3,9 @@
 var EventEmitter = require('events').EventEmitter;
 var Promise      = require('bluebird');
 
-var emitThen = function (event) {
+function emitThen (event) {
   var args = Array.prototype.slice.call(arguments, 1);
+  /* jshint validthis:true */
   return Promise
     .bind(this)
     .return(this)
@@ -19,7 +20,7 @@ var emitThen = function (event) {
       }
     })
     .return(null);
-};
+}
 
 emitThen.register = function () {
   EventEmitter.prototype.emitThen = emitThen;
