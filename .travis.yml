@@ -9,4 +9,5 @@ deploy:
     secure: HHcfnZhDayj/pPuimQ3zegPCIUYUsc5B3ChuC3s+8S0TXNc36Xw3EPW6+2iMcZmmJPwwevPboiPux5ZW1k7m+cZUUDIK/c39ksjs2xnbnCk9cI0/asYJgjPv/HsiIJSeByMwvuUNgvoWfSgnZ68sbYD21KOW+Io4IRMWLIZNg5M=
   on:
     tags: true
+    all_branches: true
     repo: bendrucker/emit-then
