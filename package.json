@@ -22,9 +22,13 @@
   },
   "homepage": "https://github.com/bendrucker/emit-then",
   "dependencies": {
-    "bluebird": "1.x"
+    "bluebird": "~2.3.5"
   },
   "devDependencies": {
-    "test-setup": "valet-io/test-setup"
+    "chai": "1",
+    "chai-as-promised": "4",
+    "mocha": "1",
+    "sinon": "1",
+    "sinon-chai": "2"
   }
 }
