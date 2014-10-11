@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/bendrucker/emit-then",
   "dependencies": {
-    "bluebird": "~2.3.5"
+    "bluebird": "2"
   },
   "devDependencies": {
     "chai": "1",
