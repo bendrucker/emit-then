@@ -13,13 +13,13 @@ $ npm install emit-then
 Add `emitThen` to your emitter prototype(s):
 
 ```js
-http.server.emitThen = require('emitThen');
+http.server.emitThen = require('emit-then');
 ```
 
 Or register `emitThen` on `EventEmitter.prototype` to make it available on all emitters:
 
 ```js
-require('emitThen').register();
+require('emit-then').register();
 ```
 
 ## Usage
