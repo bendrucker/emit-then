@@ -7,7 +7,6 @@ var chai         = require('chai');
 var expect       = chai.expect;
 var sinon        = require('sinon');
 var EventEmitter = require('events').EventEmitter;
-var Promise      = require('bluebird');
 var emitThen     = require('./');
 
 chai
@@ -51,14 +50,14 @@ describe('emit-then', function () {
 
   it('preserves the context for the handlers', function () {
     emitter.on('event', spy);
-    return emitter.emitThen('event').finally(function () {
+    return emitter.emitThen('event').catch().then(function () {
       expect(spy).to.have.been.calledOn(emitter);
     });
   });
 
   it('preserves the arguments for the handlers', function () {
     emitter.on('event', spy);
-    return emitter.emitThen('event', 'foo', 'bar').finally(function () {
+    return emitter.emitThen('event', 'foo', 'bar').catch().then(function () {
       expect(spy).to.have.been.calledWith('foo', 'bar');
     });
   });
