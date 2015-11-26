@@ -1,6 +1,5 @@
 'use strict';
 
-var EventEmitter = require('events').EventEmitter;
 function emitThen (event) {
   var args = Array.prototype.slice.call(arguments, 1);
   /* jshint validthis:true */
@@ -18,7 +17,7 @@ function emitThen (event) {
 }
 
 emitThen.register = function () {
-  EventEmitter.prototype.emitThen = emitThen;
+  require('events').prototype.emitThen = emitThen;
 };
 
 module.exports = emitThen;
