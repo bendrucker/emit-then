@@ -21,9 +21,10 @@
     "url": "https://github.com/bendrucker/emit-then/issues"
   },
   "homepage": "https://github.com/bendrucker/emit-then",
-  "dependencies": {
-    "bluebird": "2"
+  "engines": {
+    "node": ">=5"
   },
+  "dependencies": {},
   "devDependencies": {
     "chai": "1",
     "chai-as-promised": "4",
