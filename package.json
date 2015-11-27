@@ -2,9 +2,11 @@
   "name": "emit-then",
   "version": "2.0.0",
   "description": "EventEmitter.emit that wraps event calls in a promise",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "mocha test.js"
+    "compile": "babel --optional runtime -d dist/ src/",
+    "prepublish": "npm run compile",
+    "test": "mocha --compilers js:babel-core/register test.js"
   },
   "repository": {
     "type": "git",
@@ -24,12 +26,16 @@
   "engines": {
     "node": ">=5"
   },
-  "dependencies": {},
   "devDependencies": {
     "chai": "1",
     "chai-as-promised": "4",
     "mocha": "2",
     "sinon": "1",
-    "sinon-chai": "2"
+    "sinon-chai": "2",
+    "babel": "^5.8.34",
+    "babel-core": "^5.8.34"
+  },
+  "dependencies": {
+    "babel-runtime": "^5.8.34"
   }
 }

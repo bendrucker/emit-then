@@ -17,7 +17,7 @@ function emitThen (event) {
 }
 
 emitThen.register = function () {
-  require('events').prototype.emitThen = emitThen;
+  require('events').EventEmitter.prototype.emitThen = emitThen;
 };
 
 module.exports = emitThen;
