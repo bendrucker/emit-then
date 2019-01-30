@@ -4,7 +4,7 @@
   "description": "EventEmitter.emit that wraps event calls in a promise",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test.js",
+    "test": "jest --verbose --runInBand",
     "lint": "eslint ./**/*.js"
   },
   "repository": {
