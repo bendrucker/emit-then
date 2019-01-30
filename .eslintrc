@@ -1,0 +1,25 @@
+{
+  "root": true,
+  "parserOptions": {
+    "parser": "babel-eslint"
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:node/recommended"
+  ],
+  "rules": {
+    "eqeqeq": [
+      "error",
+      "always",
+      {
+        "null": "ignore"
+      }
+    ],
+    "no-unused-vars": "warn",
+    "no-console": "error",
+    "semi": [
+      "error",
+      "never"
+    ]
+  }
+}

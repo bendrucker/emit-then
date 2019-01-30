@@ -4,7 +4,8 @@
   "description": "EventEmitter.emit that wraps event calls in a promise",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test.js"
+    "test": "mocha test.js",
+    "lint": "eslint ./**/*.js"
   },
   "repository": {
     "type": "git",
@@ -20,16 +21,17 @@
   "bugs": {
     "url": "https://github.com/bendrucker/emit-then/issues"
   },
-  "homepage": "https://github.com/bendrucker/emit-then",
   "engines": {
-    "node": ">=5"
+    "node": ">=8.0.0"
   },
+  "homepage": "https://github.com/bendrucker/emit-then",
   "dependencies": {},
   "devDependencies": {
-    "chai": "^4.2.0",
-    "chai-as-promised": "^7.1.1",
-    "mocha": "^5.2.0",
-    "sinon": "^7.1.1",
-    "sinon-chai": "^3.2.0"
+    "@types/jest": "^23.3.13",
+    "@types/node": "^10.12.19",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.12.1",
+    "eslint-plugin-node": "^8.0.1",
+    "jest": "^24.0.0"
   }
 }
