@@ -11,6 +11,6 @@ module.exports.emitThen = async function emitThen (event, ...args) {
 }
 
 module.exports.register = function () {
-  require('./lib/events').EventEmitter.prototype.emitThen = module.exports.emitThen
+  require('events').EventEmitter.prototype.emitThen = module.exports.emitThen
 }
 
