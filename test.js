@@ -50,4 +50,35 @@ describe('emit-then unit test', () => {
       done()
     })
   })
+
+  it('should resolve multi-params', (done) => {
+    emitter.on('event', (one, two, three) => {
+      return one + two + three
+    })
+    emitter.emitThen('event', 1, 2, 3).then(res => {
+      expect(res).toEqual([6])
+      done()
+    })
+  })
+
+  // can't resolve `once`
+  // it('should resolve multi-listeners',  async() => {
+  //     emitter.on('event', () => {
+  //       return 'first'
+  //     })
+  //     emitter.on('event', () => {
+  //       return 'second'
+  //     })
+  //     emitter.once('event', () => {
+  //       return 'temp'
+  //     })
+  //     await emitter.emitThen('event').then(res => {
+  //       expect(res).toEqual(['first', 'second', 'temp'])
+  //       done()
+  //     })
+  //     await emitter.emitThen('event').then(res => {
+  //       expect(res).toEqual(['first', 'second'])
+  //     })
+  //   }
+  // )
 })
